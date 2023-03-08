@@ -1,0 +1,143 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #212121;
+}
+
+/* nav */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-image: url(https://cdn.discordapp.com/attachments/1064356753338286101/1077383861622816828/eb2e706235473ef2a6b358a89b65a504a0f43b2c.jpg);
+  color: #fff;
+  font-size: 40px;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  position: relative;
+  transition: opacity all 300ms ease;
+}
+
+.navbar__link:after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  bottom: -3px;
+  right: 0;
+  transition: all 300ms ease;
+  background-color: white;
+}
+
+.navbar__link:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.search__bar {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.navbar__search-bar{
+  height: 100%;
+  border: none;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.fa {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #333;
+  cursor: pointer;
+}
+
+.contact{
+  cursor: not-allowed;
+}
+
+/* game */
+
+main{
+  margin-top: 56px;
+}
+
+.game__list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+  border-radius: 10px;
+  position: relative;
+  width: 30%;
+  max-width: 400px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+
+.game__detail{
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  width: 90%;
+  margin: 0, auto;
+  padding: 10px;
+}
+
+.game__title{
+  font-size: 48px;
+}
+
+.game__saving{
+  display: inline-block;
+  color: white;
+  background-color: green;
+  border-radius: 9999px;
+  padding: 4px 8px;
+  font-size: 56px;
+}
+
+.game__price{
+  margin-top: 12px;
+}
+
+.game__price--normal {
+  text-decoration: line-through;
+  padding-right: 6px;
+  color: red;
+  font-size: 24px;
+}
+
+.game__price--sale{
+  color: green;
+  font-size: 24px;
+  font-weight: bold;
+}

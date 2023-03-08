@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
-  <title>Document</title>
-</head>
-<body>
-  <nav>
-    
-  </nav>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/ca4e96219e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>CheapGames</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__left">
+        <a class="navbar__link" href="#">Cheapgames</a>
+      </div>
+      <div class="navbar__right">
+        <a class="navbar__link" href="#">Home</a>
+        <a
+          class="navbar__link"
+          href="https://www.cheapshark.com/"
+          target="_blank"
+          >Cheapshark</a
+        >
+        <a class="navbar__link contact" href="#">Contact Us</a>
+      </div>
+      <div class="search__bar">
+        <input
+          class="navbar__search-bar"
+          type="text"
+          placeholder="Search game here"
+        />
+        <i class="fa fa-search"></i>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <div class="game__list">
+          <div class="game__card">
+            <img
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/759080/capsule_sm_120.jpg?t=1670940734"
+              alt=""
+            />
+            <div class="game__details">
+              <h2 class="game__title">Hello</h2>
+              <h3 class="game__saving">90</h3>
+              <div class="game__price">
+                <span class="game__price--normal">20</span> <span class="game__price--sale">12</span> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
