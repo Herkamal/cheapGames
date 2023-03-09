@@ -29,28 +29,40 @@
       </div>
       <div class="search__bar">
         <input
+        id="search-bar"
           class="navbar__search-bar"
           type="text"
           placeholder="Search game here"
         />
-        <i class="fa fa-search"></i>
+        <i id="search-icon" class="fa fa-search"></i>
       </div>
     </nav>
+    
     <main>
-      <section>
+      <section>       
+<select id="filter">
+  <option value="priceHighToLow">Price: High to Low</option>
+  <option value="priceLowToHigh">Price: Low to High</option>
+  <option value="rating">Rating</option>
+</select>
         <div class="game__list">
           <div class="game__card">
             <img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/759080/capsule_sm_120.jpg?t=1670940734"
+              src=""
               alt=""
             />
-            <div class="game__details">
-              <h2 class="game__title">Hello</h2>
-              <h3 class="game__saving">90</h3>
-              <div class="game__price">
-                <span class="game__price--normal">20</span> <span class="game__price--sale">12</span> 
-              </div>
+            <h2 class="game__title"></h2>
+            <div class="game__info--wrapper">
+              <h3 class="game__rating"></h3> <span class="game__count"></span>
             </div>
+            <div class="game__price">
+              <span class="game__price--normal"></span>
+              <span class="game__price--sale"></span>
+            </div>
+            <a href="#" target="_blank">
+              <button class="btn"></button>
+            </a>              
+            <h4 class="game__saving"></h4>
           </div>
         </div>
       </section>
